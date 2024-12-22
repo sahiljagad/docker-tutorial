@@ -54,6 +54,20 @@
         cont.style.display = 'none';
         contEdit.style.display = 'block';
     }
+
+    function updateProfile2() {
+        const contEdit = document.getElementById('container-edit');
+        const cont = document.getElementById('container');
+
+        document.getElementById('name').textContent = document.getElementById('input-name').value;
+        document.getElementById('email').textContent = document.getElementById('input-email').value;
+        document.getElementById('interests').textContent = document.getElementById('input-interests').value;
+
+        cont.style.display = 'block';
+        contEdit.style.display = 'none';
+    }
+
+
 </script>
 <body>
     <div class='container' id='container'>
@@ -76,7 +90,7 @@
         <hr />
         <span>Interests: </span><label for='input-interests'></label><input type="text" id='input-interests' value='coding' />
         <hr />
-        <button class='button' onclick="updateProfile()">Update Profile</button>
+        <button class='button' onclick="updateProfile2()">Update Profile</button>
     </div>
 </body>
 </html>
